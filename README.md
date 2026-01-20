@@ -1,5 +1,3 @@
-https://inbox-flow-gamma.vercel.app/
-
 # InboxFlow - Landing Page
 
 A modern, responsive landing page for InboxFlow, a SaaS platform that helps professionals supercharge their workflow by delivering curated insights directly to their inbox.
