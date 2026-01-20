@@ -1,0 +1,122 @@
+/* ========================================
+   Custom Styles - Demonstrating All Color Formats
+   ======================================== */
+
+/* Smooth scrolling behavior for anchor links and scroll navigation */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ========================================
+   Color Format Examples:
+   - Named Colors (white, black, blue, etc.)
+   - Hex (#FF6B35, #3b82f6, etc.)
+   - RGB (rgb(255, 107, 53))
+   - RGBA (rgba(37, 99, 235, 0.1))
+   - HSL (hsl(217, 91%, 60%))
+   - HSLA (hsla(15, 100%, 60%, 0.8))
+   ======================================== */
+
+/* Custom shadow styling using RGBA format
+   Provides subtle depth for card elements */
+.shadow-sm {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+/* Enhanced shadow with HSL format */
+.shadow-lg-custom {
+    box-shadow: 0 10px 30px hsla(0, 0%, 0%, 0.15);
+}
+
+/* Transition effects for interactive elements
+   Creates smooth hover and focus state changes */
+button, a {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Form input focus state styling
+   Using named color (white) and RGBA for ring */
+input:focus {
+    background-color: white; /* Named color */
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1); /* RGBA format */
+}
+
+/* Custom gradient backgrounds using various color formats */
+.gradient-orange-hero {
+    background: linear-gradient(135deg, 
+        #FF6B35 0%,           /* Hex format */
+        rgb(255, 107, 53) 50%, /* RGB format */
+        hsl(15, 100%, 60%) 100% /* HSL format */
+    );
+}
+
+/* Custom blue gradient using HSLA and RGBA */
+.gradient-blue-custom {
+    background: linear-gradient(135deg,
+        hsla(217, 91%, 60%, 1) 0%,      /* HSLA format */
+        rgba(59, 130, 246, 0.8) 50%,     /* RGBA format */
+        #2563eb 100%                      /* Hex format */
+    );
+}
+
+/* Text colors using different formats */
+.text-orange-hex {
+    color: #FF6B35; /* Hex format */
+}
+
+.text-blue-rgb {
+    color: rgb(37, 99, 235); /* RGB format */
+}
+
+.text-gray-hsl {
+    color: hsl(0, 0%, 45%); /* HSL format */
+}
+
+/* Background colors using named colors and formats */
+.bg-primary-named {
+    background-color: blue; /* Named color */
+}
+
+.bg-primary-hex {
+    background-color: #3b82f6; /* Hex format */
+}
+
+.bg-primary-rgb {
+    background-color: rgb(59, 130, 246); /* RGB format */
+}
+
+.bg-primary-hsl {
+    background-color: hsl(217, 91%, 60%); /* HSL format */
+}
+
+/* Border colors with opacity using RGBA and HSLA */
+.border-custom-rgba {
+    border: 2px solid rgba(37, 99, 235, 0.3); /* RGBA format */
+}
+
+.border-custom-hsla {
+    border: 2px solid hsla(217, 91%, 60%, 0.5); /* HSLA format */
+}
+
+/* Glow effects using RGBA */
+.glow-orange {
+    box-shadow: 0 0 20px rgba(255, 107, 53, 0.6); /* RGBA format */
+}
+
+.glow-blue {
+    box-shadow: 0 0 20px hsla(217, 91%, 60%, 0.5); /* HSLA format */
+}
+
+/* Hover states with different color formats */
+.hover-orange:hover {
+    background-color: #FF6B35; /* Hex format */
+    color: white; /* Named color */
+}
+
+.hover-blue-rgba:hover {
+    background-color: rgba(37, 99, 235, 0.1); /* RGBA format */
+}
+
+.hover-blue-hsla:hover {
+    background-color: hsla(217, 91%, 60%, 0.1); /* HSLA format */
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InboxFlow - Supercharge Your Workflow</title>
+    <!-- Tailwind CSS CDN for utility classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom stylesheet for additional styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans text-gray-900 bg-white">
+
+    <!-- Navigation Bar -->
+    <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+        <!-- Logo section with icon and brand name -->
+        <div class="flex items-center gap-2">
+            <!-- Logo using inline style with RGB format -->
+            <div class="w-8 h-8 rounded flex items-center justify-center" style="background-color: rgb(37, 99, 235);">
+                <span class="text-white text-xs font-bold">IB</span>
+            </div>
+            <span class="font-bold text-xl tracking-tight">InboxFlow</span>
+        </div>
+        <!-- Login button -->
+        <button class="bg-gray-100 px-6 py-2 rounded-md font-medium hover:bg-gray-200 transition">Login</button>
+    </nav>
+
+    <!-- Hero Section - Main landing area with headline and signup form -->
+    <header class="max-w-7xl mx-auto px-8 py-16 grid md:grid-cols-2 gap-12 items-center">
+        <!-- Left column: Main content and signup form -->
+        <div>
+            <!-- Main headline - using inline style with HSL format -->
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6" style="color: hsl(222, 47%, 11%);">
+                Supercharge your workflow today
+            </h1>
+            <!-- Subheading/description -->
+            <p class="text-gray-600 text-lg mb-8 max-w-md">
+                Join 10,000+ professionals getting the latest insights delivered straight to their inbox. No spam, ever.
+            </p>
+            
+            <!-- Email signup form for early access -->
+            <form id="hero-form" class="flex flex-col sm:flex-row gap-4 mb-4">
+                <!-- Email input with icon -->
+                <div class="relative flex-grow">
+                    <span class="absolute inset-y-0 left-3 flex items-center text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </span>
+                    <input type="email" placeholder="Enter Your Work Email" class="w-full pl-10 pr-4 py-3 bg-gray-100 border-none focus:ring-2 focus:ring-blue-500 outline-none" style="border-radius: 0;">
+                </div>
+                <!-- Submit button using inline style with Hex format -->
+                <button class="text-white px-8 py-3 font-semibold transition whitespace-nowrap" style="background-color: #2563eb; border-radius: 0;" onmouseover="this.style.backgroundColor='hsl(217, 91%, 50%)'" onmouseout="this.style.backgroundColor='#2563eb'">
+                    Get Early Access
+                </button>
+            </form>
+            <!-- Trial information text -->
+            <p class="text-sm text-gray-500 mb-8">Start your free 14-day trial. No credit card required.</p>
+            
+            <!-- Social proof: User avatars and trust indicator -->
+            <div class="flex items-center gap-4">
+                <!-- Overlapping user avatars -->
+                <div class="flex -space-x-2">
+                    <img src="https://i.pravatar.cc/40?u=1" class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+                    <img src="https://i.pravatar.cc/40?u=2" class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+                    <img src="https://i.pravatar.cc/40?u=3" class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+                </div>
+                <!-- Trust indicator text -->
+                <span class="text-gray-700 font-medium">Trusted by Top Teams</span>
+            </div>
+        </div>
+        <!-- Right column: Hero image -->
+        <div class="relative">
+            <img src="hero-image.svg" alt="Workflow Visualization" class="rounded-3xl shadow-2xl w-full object-cover h-[400px]">
+        </div>
+    </header>
+
+    <!-- Features Section - Why Choose Us -->
+    <section class="py-24 px-8" style="background-color: #e9edee;">
+        <!-- Section heading -->
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Why Choose Us</h2>
+            <p class="text-gray-600">We provide the best tools to streamline your productivity and secure your data.</p>
+        </div>
+        
+        <!-- Features grid: 3 columns on desktop, single column on mobile -->
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+            <!-- Feature Card 1: Speed -->
+            <div class="bg-white p-10 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <!-- Icon container using RGBA format for background -->
+                <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-6" style="background-color: rgba(59, 130, 246, 0.1); color: hsl(217, 91%, 60%);">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Speed</h3>
+                <p class="text-gray-600 leading-relaxed">Lightning fast delivery of content ensuring you never miss a beat in your daily workflow.</p>
+            </div>
+
+            <!-- Feature Card 2: Security -->
+            <div class="bg-white p-10 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <!-- Icon container using HSLA format for background -->
+                <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-6" style="background-color: hsla(217, 91%, 60%, 0.1); color: #2563eb;">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Security</h3>
+                <p class="text-gray-600 leading-relaxed">Your data is encrypted with enterprise-grade protocols to keep your information safe.</p>
+            </div>
+
+            <!-- Feature Card 3: Quality -->
+            <div class="bg-white p-10 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <!-- Icon container using named color and hex -->
+                <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-6" style="background-color: rgba(59, 130, 246, 0.1); color: rgb(37, 99, 235);">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Quality</h3>
+                <p class="text-gray-600 leading-relaxed">Curated by industry experts, bringing you only the most relevant and high quality insights.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section - Secondary signup form -->
+    <section class="py-24 px-8 text-center bg-white">
+        <!-- Section heading -->
+        <h2 class="text-4xl font-bold mb-4">Ready to get started</h2>
+        <!-- Section description -->
+        <p class="text-gray-600 mb-10 max-w-2xl mx-auto">Join our newsletter today and take the first step towards a more productive future. Never miss an update.</p>
+        
+        <!-- Newsletter subscription form -->
+        <form id="cta-form" class="flex flex-col sm:flex-row gap-4 justify-center">
+            <!-- Email input field -->
+            <input type="email" placeholder="Enter Your Work Email" class="px-6 py-3 bg-gray-100 border-none rounded-md w-full max-w-xs focus:ring-2 focus:ring-blue-500 outline-none">
+            <!-- Subscribe button using inline style with HSL format -->
+            <button class="text-white px-8 py-3 rounded-md font-semibold transition" style="background-color: hsl(217, 91%, 60%);" onmouseover="this.style.backgroundColor='rgba(29, 78, 216, 1)'" onmouseout="this.style.backgroundColor='hsl(217, 91%, 60%)'">
+                Subscribe Now
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-50 border-t border-gray-200 py-12 px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <!-- Footer logo using inline style with RGB format -->
+            <div class="flex items-center gap-2">
+                <div class="w-6 h-6 rounded flex items-center justify-center" style="background-color: rgb(37, 99, 235);">
+                    <span class="text-white text-[10px] font-bold">IB</span>
+                </div>
+                <span class="font-bold text-lg">InboxFlow</span>
+            </div>
+            
+            <!-- Footer navigation links using inline styles with different color formats -->
+            <div class="flex flex-wrap justify-center gap-8 font-medium" style="color: hsl(0, 0%, 45%);">
+                <a href="#" class="transition" style="color: hsl(0, 0%, 45%);" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='hsl(0, 0%, 45%)'">Privacy Policy</a>
+                <a href="#" class="transition" style="color: rgb(75, 85, 99);" onmouseover="this.style.color='hsl(217, 91%, 60%)'" onmouseout="this.style.color='rgb(75, 85, 99)'">Terms of Service</a>
+                <a href="#" class="transition" style="color: #4b5563;" onmouseover="this.style.color='rgba(37, 99, 235, 1)'" onmouseout="this.style.color='#4b5563'">Contact</a>
+            </div>
+            
+            <!-- Copyright notice -->
+            <p class="text-gray-400 text-sm">© 2024 InboxFlow. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for form handling and interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>
