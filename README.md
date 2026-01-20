@@ -51,7 +51,6 @@ npm run build:css
 4. Call-to-action newsletter form
 5. Footer with navigation links
 
-See `src/COLOR_FORMATS_REFERENCE.md` for detailed color format documentation.
 
 ---
 
