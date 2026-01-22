@@ -1071,6 +1071,10 @@ video {
     flex-direction: row;
   }
 
+  .md\:text-left {
+    text-align: left;
+  }
+
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
